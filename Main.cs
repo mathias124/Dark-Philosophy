@@ -7,6 +7,7 @@ public class Main : MonoBehaviour
 {
     public string FirstLevel;
 
+    public GameObject optionsScreen;
     // Start is called before the first frame update
 
     void Start()
@@ -27,11 +28,11 @@ public class Main : MonoBehaviour
 
      public void OpenOptions()
     {
-
+        optionsScreen.SetActive(true);
     }
      public void CloseOptions()
     {
-
+        optionsScreen.SetActive(false);
     }
      public void quit()
     {
